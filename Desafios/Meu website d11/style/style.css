@@ -1,0 +1,256 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Monument Extended";
+    src: url("../assets/MonumentExtended-Ultrabold.otf") format("truetype"), url("../assets/MonumentExtended-Regular.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+* {margin: 0;
+}
+:root{
+    --cor1:#4f231a;
+    --cor2:#dbc8b0;
+    --cor3:#e6e2e1;
+    --cor4:#0e0604;
+
+    --fonte-padrao: arial, verdana, helvetica, sans-serif
+}
+body{
+    background-color: var(--cor2);
+    height: 100vh;
+    font-family: var(--fonte-padrao);
+}
+header{
+    background-color:var(--cor1);
+    margin: auto;
+    padding: 60px;
+    font-family: Monument Extended;
+}
+
+#logo{
+    align-items: center;
+    height: 120px;
+    width: 120px;
+    position: absolute; 
+    left:645px; 
+    top: 0px;
+}
+
+#numerowhatsapp{
+    color: var(--cor2);
+    text-align: left;
+    font-size: larger;
+    position: absolute; 
+    left: 200px; 
+    top: 51px;
+}
+svg{
+    position: absolute; 
+    left: 166px;
+    top: 49px;
+}
+
+#slogan{
+    font-family: 'Mynerve';
+    font-size: x-large;
+    color: var(--cor2);
+    position: absolute; 
+    left: 1100px; 
+    top: 35px;
+}
+
+main{
+    background-color: var(--cor3);
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 20px;
+    box-shadow:0px 3px 58px 16px #0e060446;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+main img{
+    width: 100%;
+}
+hr{
+    display: block;
+    margin: auto;
+    border: 2px solid var(--cor1);
+}
+main span{
+    color: var(--cor1);
+    font-weight: bolder;
+    text-decoration: underline;
+}
+
+footer{
+    background-color: var(--cor4);
+    text-align: center;
+    color: var(--cor3);
+}
+
+#grãos{
+    border-radius: 25px;
+    margin-bottom: 12px;
+}
+#nomeloja{
+    color: var(--cor1);
+    font-weight: bolder;
+}
+#textogrãos{
+    margin-bottom: 20px;
+}
+
+.icon{
+    width: 70px;
+    height: 70px;
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    border: 2.8px solid black;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+
+.textoicon{
+    margin-bottom: 24px;
+    margin-top: -20px; 
+ 
+}
+
+#atendimento{
+    margin-top: 42px;
+}
+#textoatendimento{
+    margin-bottom: 30px;
+}
+
+#cliente{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 25px;
+    border: 3px solid #0e0604;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.096);
+    
+}
+#boxcliente{
+    font-weight: 900;
+    text-indent: 5px;
+    background-color: rgb(201, 201, 201);
+    border: 2px solid rgba(173, 173, 173, 0.527);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.096);
+}
+h1{
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#rechamada{
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: x-small;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+   
+a{
+    color: #0e0604;
+    text-decoration: none;
+}
+#linkre:hover {
+    text-decoration: none;
+    color: red;
+    zoom: 110%;
+    transition-duration: 0.5s;
+}
+#footerlink{
+    color: var(--cor2);
+    text-decoration: underline;
+}
+
+
+@media (max-width: 1024px)
+{
+    #logo{
+    left: 455px;
+    top: 1px;
+}
+    #numerowhatsapp{
+        left: 150px;
+        top: 51.5px;
+        font-size: medium;
+    }
+    svg{
+        height: 20px;
+        width: 20px;
+        left: 120px;
+        top: 50px;
+    }
+    #slogan{
+        left: 745px;
+        top: 38px;
+        font-size: larger;
+    }
+}
+
+@media (max-width: 800px)
+{
+    #logo{
+        left: 345px;
+        top: 10px;
+        height: 100px;
+        width: 100px;
+}
+    #numerowhatsapp{
+        left: 90px;
+        top: 52px;
+        font-size: medium;
+    }
+    svg{
+        height: 20px;
+        width: 20px;
+        left: 55px;
+        top: 50px;
+    }
+    #slogan{
+        left: 560px;
+        top: 38px;
+        font-size: larger;
+    }
+}
+
+    @media (max-width: 550px)
+    {
+        #logo{
+        left: 204px;
+        top: 10px;
+        height: 100px;
+        width: 100px;
+    }
+        #numerowhatsapp{
+            left: 40px;
+            top: 52.25px;
+            font-size: medium;
+        }
+        svg{
+            height: 20px;
+            width: 20px;
+            left: 13.5px;
+            top: 50px;
+        }
+        #slogan{
+            left: 315px;
+            top: 36px;
+            font-size: larger;
+        }
+    }

@@ -1,0 +1,15 @@
+@charset "UTF-8";
+body{
+    background-color: black; color: white; font-family: sans-serif;
+}
+a{
+    color: white; text-decoration: none; font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline; color: red;
+}
+a::after{
+    content: " - Link"; 
+    font-weight: normal;
+    color: white;
+}

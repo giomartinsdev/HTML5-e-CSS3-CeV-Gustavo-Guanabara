@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: "Idroid";
+    src: url("fontes/idroid.otf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif; color: rgb(255, 255, 255);
+    background-color: rgb(97, 255, 136);
+    
+}
+body > p{
+    text-align: center;
+    font-size: smaller ;
+    padding: 3px;
+    margin: 20px -10px 0px -10px;
+    background-color: rgb(4, 58, 4);
+
+}
+header{
+    text-align: center;
+    background-image: linear-gradient(to bottom, rgb(97, 255, 136), rgb(30, 83, 43));
+    margin-top: -21px;
+    margin-right: -10px;
+    margin-bottom: 0px;
+    margin-left: -28px;
+}
+header > h1{
+    color: rgb(20, 53, 28);
+}
+header > p{
+    font-size: small;
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+}
+nav{
+    text-align: left;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    margin-left: 25px;
+    
+}
+
+nav > p{
+    font-size: 0.9em;
+}
+
+main{
+    text-align: center;
+    background-color: white;
+    color: rgb(30, 83, 43);
+}
+
+main > h1{
+    margin: -15px 10px 18px 9px;
+    text-align: left;
+    font-family: Idroid;
+    font-size: 1.7em;
+}
+main > h2{
+    margin: -15px 10px 18px 9px;
+    text-align: left;
+    font-family: Idroid;
+    font-size: 1.45em;
+}
+main > p{
+    margin: -10px 10px 21px 10px;
+    text-indent: 50px;
+    color: black;
+    text-align: justify;
+}
+footer{
+    background-color: white;
+    padding: 10px;
+    border-radius: 05px;
+}
+footer > p{
+    color: black; 
+    margin: 30px 10px 10px 10px;
+}
+footer > h1{
+    background-color: rgb(56, 124, 56);
+    font-size: 1.3em;
+    margin: 10px 10px 10px 10px;
+    padding: 4px 4px 4px 4px;
+    border-radius: 05px;
+}
+article{
+    background-color: rgba(23, 209, 48, 0.671);
+    box-shadow: 10px 10px 40px 0px rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    padding: 12px 22px 15px 6px;
+}
+article > p{
+    color: black;
+    text-indent: 10px;
+    margin-left: 12px;
+    margin-bottom: 10px;
+}
+ul{
+    color: rgb(15, 34, 15);
+}
+span{
+    color: rgb(30, 83, 43);
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+.teste{
+    background-image: linear-gradient(to right, rgba(91, 255, 132, 0.445), rgba(30, 83, 43, 0));
+}
+#irina {
+    margin-top: -5px;
+    margin-right: 1px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+#bugdroid{
+    margin-top: -09px;
+    margin-right: 1px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+#video{
+    margin-top: -09px;
+    margin-right: 1px;
+    margin-bottom: 15px;
+    margin-left: 20%;
+}
+.lista{
+    text-align: left;
+}
+.lista2{
+    text-align: right;
+}
+.linknav{
+    color: rgb(49, 83, 50);
+}
+.linknav:link{
+    background: rgb(93, 158, 97);
+ color: rgb(49, 83, 50);
+ border-width: 3px;
+ border-radius: 5px;
+ border-style: solid;
+ border-color: rgb(49, 83, 50);;
+}
+.linknav:hover{
+    background-color: rgb(93, 158, 97);
+    padding: 10px;
+    border-radius: 5px;
+    zoom: 75%;
+    margin: 10px 10px 10px 10px;
+    color: rgb(49, 83, 50);
+}
