@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exercício Wallpaper</title>
-    
+
     <style>
-      body{
-        background-image: url("Assets/wallpaper001.jpg")
+      body {
+        background-image: url("Assets/wallpaper001.jpg");
       }
-      .quadrado{
+      .quadrado {
         width: 300px;
         height: 300px;
         display: inline-block;
@@ -19,31 +19,34 @@
         border-radius: 10px;
         margin-top: 20px;
       }
-      .quadrado:hover{
-        zoom: 110%;
-      }
-      #q1{
+      #q1 {
         background-color: brown;
-        margin-left: 4%;
+        margin-left: 16%;
       }
-      #q2{
-        background-image: linear-gradient(to bottom, rgba(255, 255, 0, 0), rgb(66, 0, 0));
+      #q2 {
+        background-image: linear-gradient(
+          to bottom,
+          rgba(255, 255, 0, 0),
+          rgb(66, 0, 0)
+        );
       }
-      #q3{
+      #q3 {
         background-image: url("Assets/pattern003.png");
       }
-    </style>
 
+      @media only screen and (max-width: 812px) {
+        #q1 {
+          background-color: brown;
+          margin: auto;
+        }
+      }
+    </style>
   </head>
   <body>
-    <div class="quadrado" id="q1">
-
-    </div>
-    <div class="quadrado" id="q2">
-
-    </div>
-    <div class="quadrado" id="q3">
-
+    <div id="pai">
+      <div class="quadrado" id="q1"></div>
+      <div class="quadrado" id="q2"></div>
+      <div class="quadrado" id="q3"></div>
     </div>
   </body>
 </html>
