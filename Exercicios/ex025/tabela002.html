@@ -15,22 +15,31 @@
       }
       td,
       th {
-        border: 3px solid black;
+        border: 2.5px solid black;
       }
-
+      caption{
+        font-weight: bold;
+        font-size: 1.5em;
+        padding: 5px;
+      }
       td:hover {
         background-color: yellow;
       }
       h1 {
         text-align: center;
       }
+      tbody > tr:nth-child(even){
+        background-color: lightgray;
+      }
       .num {
         text-align: right;
       }
-
+      .pop{
+        width: 50px;
+      }
       thead,
       tfoot {
-        background-color: rgb(221, 221, 221);
+        background-color: lightgray;
       }
       #result {
         font-weight: bold;
@@ -45,6 +54,7 @@
                     TR, TD E TH
                 TFOOT
                     TR, TD E TH
+                *CAPTION
 
             -->
   <body>
@@ -52,10 +62,13 @@
     <div>
       <table>
         <thead>
-          <th>Estado</th>
-          <th>População</th>
+          <th scope="col">Estado</th>
+          <th scope="col" class="pop">População</th>
         </thead>
         <tbody>
+          <abbr title="LEGENDA DA TABELA = CAPTION">
+            <caption>ESTADOS DO BRASIL</caption>
+          </abbr>
           <tr>
             <td class="nom">São Paulo</td>
             <td class="num">46.024.937</td>
@@ -166,7 +179,7 @@
           </tr>
         </tbody>
         <tfoot>
-          <th>População Total</th>
+          <th scope="row">População Total</th>
           <td class="num" id="result">216.561.163</td>
         </tfoot>
       </table>
