@@ -16,8 +16,18 @@
         border: 3px solid black;
       }
 
+      td:hover{
+        background-color: yellow;
+      }
+      .num{
+        text-align: right;
+      }
+
       thead, tfoot{
         background-color: rgb(221, 221, 221);
+      }
+      #result{
+        font-weight: bold;
       }
 
     </style>
@@ -153,9 +163,8 @@
         </tbody>
         <tfoot>
             <th>População Total</th>
-            <td>0.000.000.000</td>
+            <td class="num" id="result">216.561.163</td>
         </tfoot>
-
     </table>
   </body>
 </html>
