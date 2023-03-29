@@ -1,0 +1,33 @@
+@charset "utf-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: gray;
+}
+h1{
+    color: transparent;
+    margin-top: 40vh;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: linear-gradient(to right, rgb(10, 34, 252), rgb(4, 5, 78));
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.199);
+}
+form{
+    position: absolute;
+    margin-left: 10px;
+    border: 2px solid rgb(0, 0, 0);
+    width: 240px;
+    height: 90px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+form > p{
+
+    margin-left: 2vh;
+}
