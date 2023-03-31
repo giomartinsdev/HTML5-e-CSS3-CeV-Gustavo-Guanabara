@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário002</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+        }
+        .container-formulario{
+            text-align: center;
+        }
+        .usuario, .senha{
+            font-weight: 900;
+        }
+        .usuario{
+            margin-top: 50%;
+        }
+        .usuario::after{
+            content: "*";
+        }
+        .senha{
+            
+        }
+        .senha::after{
+            content: "*";
+        }
+        .special{
+            padding: 10px;
+
+        }
+        h1{
+            display: block;
+            position: absolute;
+            left: 50%;
+            top: 35%;
+            transform: translate(-50%, -50%);
+            font-size: 4em;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-login">
+        <h1>LOG-IN</h1>
+    </div>
+    <div class="container-formulario">
+        <form
+        action="../php/cadastro.php" method="post"
+        autocomplete="on">
+        <div class="usuario">
+            <label for="iusu">Usuário</label>
+            <input
+            type="text"
+            name="usu"
+            id="iusu"
+            required
+            placeholder="Nome de Usuário"
+            autocomplete="username">
+        </div>
+        <div class="senha">
+            <label for="isen">Senha</label>
+            <input
+            type="password"
+            name="sen"
+            id="isen"
+            required
+            placeholder="Senha"
+            autocomplete="current-password">
+        </div>
+        <div class="special">
+            <input type="reset" value="Limpar">
+            <input
+            type="submit"
+            value="Enviar">
+        </div>
+        </form>
+    </div>
+</body>
+</html>
