@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Paragráfos exercicio</title>
-</head>
-<body>
-    <h1>Paragráfos e quebra de texto</h1>
-    <hr><p>Você pode escrever um paragráfo de qualquer jeito basta por no meio de um paragráfo identificado pelas tags &lt;p&gt; e &lt;/p&gt; <!-- LT é "<"* já GT é ">"* --> </P>
-    <p>se você precisar quebrar o texto em algum lugar você pode usar a tag &lt;br&gt; 
-    <p>Exemplo a seguir:</p> 
-    <p> "Lorem ipsum dolor sit amet, consectetur adipiscing elit. &rarr;<br>&larr; Cras eget sem turpis."</p>
-    <p>&reg; &copy; &trade; &euro; &pound; &cent; &yen; &real; &delta; &Delta; &uparrow; &downarrow; &downdownarrows;</p>
-    <hr>
-    <h1>Emojis</h1>
-    <p>Agora adicionando Emojis agora</p>
-    <p> &#x1F596;
-        &#x1F913;
-    </p>
-    <p> <!-- &#x1F596; para emojis diferentes so buscar o codigo do Emoji no emojipedia.org "&#x;" é o codigo base para o emoji com final em ; --> </p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tabelas faculdade</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+      }
+      table{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 100px;
+      }
+      td,
+      tr,
+      th {
+        border: 1px solid black;
+      }
+      th{
+        font-weight: bolder;
+        text-align: center;
+      }
+      td, th:hover{
+        cursor: pointer;
+      }
+    
+    </style>
+  </head>
+  <body>
+    <h1>Exemplo de tabela</h1>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">NOME SIMPLES</th>
+          <th colspan="2">COR</th>
+          <th>IDADE</th>
+          <th>SEXO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2">Fabinho</td>
+          <td colspan="2">Azul</td>
+          <td>36</td>
+          <td>Masculino</td>
+        </tr>
+        <tr>
+          <td colspan="2">Alexandre</td>
+          <td colspan="2">Verde</td>
+          <td>32</td>
+          <td>Masculino</td>
+        </tr>
+        <td colspan="2">Luiza</td>
+        <td colspan="2">Vermelho</td>
+        <td>21</td>
+        <td>Feminino</td>
+      </tbody>
+      <tfoot>
+        <tr>
+            <th colspan="5">Quem ganhou:</th><td><b>Masculino</b></td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
 </html>
