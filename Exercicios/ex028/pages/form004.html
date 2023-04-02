@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form autocomplete="on" action="../php/caddddastro.php" method="post">
+
+        <div class="container-campos">
+            <div class="campocor">
+                <label for="icor">Cor</label>
+                <input
+                type="color"
+                name="cor"
+                id="icor"
+                value="#ffff00"
+                >
+            </div>
+            <div class="camporange">
+                <label for="irange">Defina sua satisfação</label>
+                <input
+                type="range"
+                name="range"
+                id="irange"
+                value="0"
+                min="0"
+                max="10"
+                >
+            </div>
+        </div>
+        <div class="actbut">
+            <input 
+            type="reset" 
+            value="Limpar"> 
+
+            <input 
+            type="submit" 
+            value="Enviar">
+        </div>
+    </form>
+
+</body>
+</html>
